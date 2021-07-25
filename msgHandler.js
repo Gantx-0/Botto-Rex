@@ -580,7 +580,7 @@ ${desc}`)
             await client.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`)
             break
         case 'help':
-            client.reply(from, help(prefix, pushname), message.id)
+	    client.sendFileFromUrl(from, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3UctKxgw-xZGnFlAB6nqKcRBhOGqm7uviVQ&usqp=CAU', 'file.jpg', 'Hello baka' , id)
             break
         case 'info':
             client.reply(from, info, id)
